@@ -2,19 +2,43 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-gray-900 text-white p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold">Jrae</h1>
-        <nav>
-          <ul className="flex gap-4">
-            <li><Link to="/" className="hover:text-gray-400">Home</Link></li>
-            <li><Link to="/about" className="hover:text-gray-400">About</Link></li>
-            <li><Link to="/projects" className="hover:text-gray-400">Projects</Link></li>
-            <li><Link to="/contact" className="hover:text-gray-400">Contact</Link></li>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        {/* Logo / Brand */}
+        <Link className="navbar-brand fw-bold" to="/">Jrae</Link>
+
+        {/* Mobile Toggle Button */}
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Navbar Links */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/projects">Projects</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Contact</Link>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 
