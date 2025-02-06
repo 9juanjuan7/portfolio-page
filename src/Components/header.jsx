@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
-
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container">
         {/* Logo / Brand */}
-        <Link className="navbar-brand fw-bold" to="/">Jrae</Link>
+        <a className="navbar-brand fw-bold" href="#home">Juan Rea</a>
 
         {/* Mobile Toggle Button */}
         <button 
@@ -24,16 +22,16 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <a className="nav-link" href="#home">Home</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <a className="nav-link" href="#about">About</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/projects">Projects</Link>
+              <a className="nav-link" href="#projects">Projects</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <a className="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
