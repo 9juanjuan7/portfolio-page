@@ -4,10 +4,20 @@ html {
 .section-divider {
   width: 90%;
   height: 4px;
-  background: linear-gradient(to right, #007bff, #0056b3);
+  background: linear-gradient(to right, #17a589, #138d75);
   margin: 80px auto;
   border-radius: 2px;
   border: none;
+}
+
+.btn-primary {
+  background-color: #17a589 !important;  /* Darker turquoise */
+  border-color: #17a589 !important;
+}
+
+.btn-primary:hover {
+  background-color: #138d75 !important; /* Even darker on hover */
+  border-color: #138d75 !important;
 }
 
 /* Background GIF Container */

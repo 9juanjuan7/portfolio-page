@@ -5,7 +5,7 @@ const Header = () => {
       <div className="container">
         {/* Logo / Brand */}
         <a className="navbar-brand fw-bold" href="#home">
-        <img src={Logo} alt="Logo" width="30" height="30" />
+        {/*<img src={Logo} alt="Logo" width="30" height="30" />*/}
         Juan Rea
         </a>
 

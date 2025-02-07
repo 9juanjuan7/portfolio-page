@@ -1,3 +1,4 @@
+import logo from "../assets/logo.svg";
 const Home = () => {
   return (
     <section className="home-section container-fluid">
@@ -16,7 +17,7 @@ const Home = () => {
           {/* Right Column - Profile Image */}
           <div className="col-md-6 text-center">
             <img 
-              src="/horizon.JPG" 
+              src="/logoremove.png"
               alt="Profile" 
               className="img-fluid rounded-circle shadow"
               style={{ width: "300px", height: "300px", objectFit: "cover" }}
