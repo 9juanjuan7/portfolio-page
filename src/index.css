@@ -76,6 +76,53 @@ html {
   }
 }
 
+.border-custom {
+  border: 2px solid #17a589 !important; /* Matches btn-primary color */
+  border-radius: 12px; /* Rounded edges */
+  transition: all 0.3s ease-in-out;
+}
+
+.shadow-custom {
+  box-shadow: 0px 4px 10px rgba(23, 165, 137, 0.3); /* Subtle turquoise shadow */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-custom:hover {
+  box-shadow: 0px 6px 15px rgba(23, 165, 137, 0.5); /* Stronger shadow on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Default color for social icons */
+.social-icon {
+  font-size: 1.8rem; /* Icon size */
+  color: #d1d1d1 !important; /* Light gray - Common secondary color */
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect - Changes to white */
+.social-icon:hover {
+  color: #ffffff !important; /* Turns white on hover */
+  transform: scale(1.1); /* Subtle zoom effect */
+}
+
+/* Default navbar link color */
+.navbar-nav .nav-link {
+  color: #d1d1d1 !important; /* Light gray for inactive links */
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+/* Highlight active link in turquoise */
+.navbar-nav .nav-link.active-link {
+  color: #17a589 !important; /* Primary turquoise */
+  font-weight: bold;
+  border-bottom: 2px solid #17a589; /* Underline effect */
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important; /* White on hover */
+}
 
 
 

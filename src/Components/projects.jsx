@@ -5,23 +5,18 @@ const Projects = () => {
       id: 1,
       title: "StarStake (DeFi Staking Platform)",
       description: "A decentralized Ethereum staking platform built on the Sepolia Testnet.",
-      img: "https://via.placeholder.com/400", // Replace with actual project image
-      link: "https://github.com/Jrae/StarStake" // Replace with actual project link
+      img: "/starstake-aquarium.png", // Replace with actual project image
+      link: "https://starstake-bay.vercel.app/",
+      github: "https://github.com/9juanjuan7/starstake-decentralized-staking"
     },
     {
       id: 2,
-      title: "Resume Website",
+      title: "Portfolio Website",
       description: "A personal resume portfolio website built with React and Bootstrap.",
-      img: "https://via.placeholder.com/400",
-      link: "https://github.com/Jrae/Resume-Website"
+      img: "/LOGO1.png",
+      link: "https://github.com/Jrae/Resume-Website",
+      github: "https://github.com/9juanjuan7/juanpage"
     },
-    {
-      id: 3,
-      title: "SQL Enterprise Database",
-      description: "A database management system built using SQLite for efficient data handling.",
-      img: "https://via.placeholder.com/400",
-      link: "https://github.com/Jrae/SQL-Database-Project"
-    }
   ];
 
   return (
@@ -37,8 +32,11 @@ const Projects = () => {
                 <div className="card-body">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text text-secondary">{project.description}</p>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary me-2">
                     View Project
+                  </a>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-outline-secondary">
+                    <i className="bi bi-github"></i> GitHub
                   </a>
                 </div>
               </div>
