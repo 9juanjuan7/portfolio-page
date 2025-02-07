@@ -9,5 +9,64 @@ html {
   border-radius: 2px;
   border: none;
 }
-  
+
+/* Background GIF Container */
+.home-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevents scroll issues */
+}
+
+/* Background GIF */
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/background.gif') no-repeat center center/cover;
+  will-change: transform, opacity;
+  transition: opacity 1s ease-in-out;
+  opacity: 0.5; /* Adjust opacity (0 = fully transparent, 1 = fully visible) */
+  filter: blur(8px) grayscale(30%);
+  animation: slow-zoom 20s infinite alternate ease-in-out;
+  z-index: 1;
+}
+
+/* Dark Overlay (Optional, for better readability) */
+.home-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+  z-index: 2;
+}
+
+/* Ensure Content is On Top */
+.home-section .content {
+  position: relative;
+  z-index: 3; /* Ensures text & images remain bright */
+}
+
+
+/* Slow Zoom Animation */
+@keyframes slow-zoom {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.1);
+  }
+}
+
+
+
+
   

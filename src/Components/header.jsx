@@ -1,9 +1,13 @@
+import Logo from "../assets/logo.svg";
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container">
         {/* Logo / Brand */}
-        <a className="navbar-brand fw-bold" href="#home">Juan Rea</a>
+        <a className="navbar-brand fw-bold" href="#home">
+        <img src={Logo} alt="Logo" width="30" height="30" />
+        Juan Rea
+        </a>
 
         {/* Mobile Toggle Button */}
         <button 
