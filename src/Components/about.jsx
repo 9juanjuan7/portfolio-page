@@ -5,7 +5,7 @@ const About = () => {
         {/* Left Column - Profile Image */}
         <div className="col-md-5 text-center">
           <img 
-            src="public/profile.jpg" 
+            src="/profile.jpg" 
             alt="picture" 
             className="img-fluid rounded-circle shadow"
             style={{ width: "350px", height: "350px", objectFit: "cover" }}
