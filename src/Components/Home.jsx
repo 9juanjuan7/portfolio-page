@@ -13,7 +13,9 @@ const Home = () => {
               Passionate about driving innovation in Web3 solutions for real-world applications.<br></br>
               Recent ventures include Solidity development and financial systems research.
             </p>
-            <a href="#projects" className="btn btn-primary btn-lg mt-3">View My Projects</a>
+            <a href="/jrea-resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg mt-3">
+              <i className="bi bi-file-earmark"></i> View Resume
+            </a>
 
             {/* Social Media Icons */}
             <div className="d-flex justify-content-center gap-3 mt-4">
