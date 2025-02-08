@@ -18,11 +18,10 @@ const About = () => {
           <p className="text-secondary">
           Currently in my third year of Computing Science with minor in Commerce at the University of Alberta.
           Passionate about decentralized finance, blockchain, AI, data science, soccer, and music production.
-          Recent ventures include Solidity development and financial systems research.
           I actively explore and engage with various DeFi protocols, yield farming strategies, liquidity pools, and crypto investing,
           gaining hands-on experience in smart contract interactions, risk management, and on-chain analysis.
           Additionally, I have done extensive research on blockchain and Web3 solutions in AI, financial systems, real-world assets, and even music.
-          I have mastered multiple digital audio workstations, worked with artists from accross the world, and monetized my music through digital platforms.
+          I have mastered multiple digital audio workstations, worked with artists from accross the world, and monetized my music through digital platforms.<br></br>
           My vision is to empower people by integrating traditional systems with blockchain and driving innovation in Web3 solutions for real-world applications. 
 
           </p>
