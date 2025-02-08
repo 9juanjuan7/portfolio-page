@@ -5,14 +5,14 @@ const Experience = () => {
       role: "Direct Sales Specialist",
       company: "Smart Haven - Telus Trusted Provider",
       duration: "Oct. 2024 - Present",
-      description: "My role involves engaging with clients, providing tailored solutions to enhance home technology and connectivity, and driving business growth through effective communication and product expertise."
+      description: "My role involves engaging with clients, providing tailored solutions to enhance home technology and connectivity, processing orders, and driving business growth through effective communication and product expertise."
     },
     {
       id: 2,
-      role: "Developer",
-      company: "StarStake (DeFi Staking Platform)",
-      duration: "2024",
-      description: "Built a decentralized Ethereum staking platform on the Sepolia Testnet."
+      role: "Student of Computing Science",
+      company: "University of Alberta",
+      duration: "2022 - 2026",
+      description: "Relevant coursework: Computer Organization and Architecture I, Practical Programming Methodology, Algorithms I, Probabilistic Modeling, Machine Learning I, Search and Planning in AI, Intro to File and Database Management, Formal Systems and Logic."
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="container-fluid d-flex align-items-center justify-content-center vh-100">
+    <section id="experience" className="container-fluid d-flex align-items-center justify-content-center vh-100 position-relative">
       <div className="text-center w-75">
         <h2 className="fw-bold mb-4">Experience</h2>
 
@@ -49,6 +49,12 @@ const Experience = () => {
             </div>
           ))}
         </div>
+      </div>
+      {/* Scroll Down Arrow */}
+      <div className="arrow-container">
+        <a href="#contact" className="scroll-arrow">
+          <i className="bi bi-chevron-down"></i>
+        </a>
       </div>
     </section>
   );

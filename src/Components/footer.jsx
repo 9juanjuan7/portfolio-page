@@ -6,8 +6,8 @@ const Footer = () => {
         <a href="https://github.com/9juanjuan7" target="_blank" rel="noopener noreferrer" className="text-white fs-4">
           <i className="bi bi-github"></i>
         </a>
-        <a href="https://twitter.com/Jrae" target="_blank" rel="noopener noreferrer" className="text-white fs-4">
-          <i className="bi bi-twitter"></i>
+        <a href="mailto:jerea@ualberta.ca" className="text-white fs-4">
+          <i className="bi bi-envelope"></i>
         </a>
         <a href="https://www.linkedin.com/in/juan-rea7/" target="_blank" rel="noopener noreferrer" className="text-white fs-4">
           <i className="bi bi-linkedin"></i>
