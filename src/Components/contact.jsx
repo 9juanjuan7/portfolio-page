@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <section id="contact" className="contact-section d-flex align-items-center justify-content-center vh-100 position-relative">
+        <section id="contact" className="contact-section d-flex align-items-center justify-content-center min-vh-100 position-relative">
             <div className="container text-white"> {/* Ensures text is readable */}
                 <div className="row h-100 align-items-center justify-content-center">
                     <div className="col-lg-6 text-center">

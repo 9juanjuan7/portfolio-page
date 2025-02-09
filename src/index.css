@@ -186,3 +186,9 @@ html {
   position: relative;
   z-index: 2;
 }
+
+section[id]:not(#contact) {
+  /* Adjust the top offset to match your navbar’s height */
+  scroll-margin-top: 6rem; 
+}
+

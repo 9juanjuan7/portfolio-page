@@ -31,7 +31,8 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="container-fluid d-flex align-items-center justify-content-center vh-100 position-relative">
+    <section id="experience" className="container-fluid d-flex flex-column justify-content-center align-items-center min-h-screen px-4 py-10">
+
       <div className="text-center w-75">
         <h2 className="fw-bold mb-4">Experience</h2>
 

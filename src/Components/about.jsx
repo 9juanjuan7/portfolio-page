@@ -1,6 +1,7 @@
 const About = () => {
   return (
-    <section id="about" className="container-fluid d-flex align-items-center vh-100 position-relative">
+    <section id="about" className="container-fluid d-flex flex-column flex-md-row align-items-center min-h-screen px-4 py-10 text-center text-md-start">
+
       <div className="row w-100 align-items-center">
         {/* Left Column - Profile Image */}
         <div className="col-md-5 text-center">

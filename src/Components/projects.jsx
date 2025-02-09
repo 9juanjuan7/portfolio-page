@@ -22,13 +22,13 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="container-fluid d-flex align-items-center justify-content-center vh-100 position-relative">
+    <section id="projects" className="container-fluid d-flex flex-column justify-content-center align-items-center min-h-screen px-4 py-10">
       <div className="container">
         <h2 className="text-center fw-bold mb-4">My Projects</h2>
         
         <div className="row justify-content-center">
           {projectData.map((project) => (
-            <div className="col-md-4 mb-4" key={project.id}>
+            <div className="col-12 col-md-6 col-lg-4 mb-4" key={project.id}>
               <div className="card shadow-sm">
                 <img src={project.img} className="card-img-top" alt={project.title} />
                 <div className="card-body">
