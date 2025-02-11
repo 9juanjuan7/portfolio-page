@@ -22,7 +22,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="container-fluid d-flex flex-column justify-content-center align-items-center min-h-screen px-4 py-10">
+    <section id="projects" className="container-fluid d-flex flex-column justify-content-center align-items-center min-h-screen px-4 py-10 position-relative">
       <div className="container">
         <h2 className="text-center fw-bold mb-4">My Projects</h2>
         
@@ -46,12 +46,6 @@ const Projects = () => {
             </div>
           ))}
         </div>
-      </div>
-      {/* Scroll Down Arrow */}
-      <div className="arrow-container">
-        <a href="#experience" className="scroll-arrow">
-          <i className="bi bi-chevron-down"></i>
-        </a>
       </div>
     </section>
   );

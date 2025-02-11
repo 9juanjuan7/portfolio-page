@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false); // ✅ Track if the menu is open
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,28 +27,26 @@ const Header = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div className="container justify-content-center">
-        {/* Mobile Toggle Button */}
+      <div className="container justify-content-between">
+        {/* Mobile Toggle Button - Controlled by React */}
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => setMenuOpen(!menuOpen)} // ✅ Toggles menu state
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Centered Navbar Links */}
-        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul className="navbar-nav">
+        {/* Navbar Links - Menu Opens/Closes Based on State */}
+        <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} id="navbarNav">
+          <ul className="navbar-nav mx-auto">
             {["home", "about", "projects", "experience", "contact"].map((section) => (
-              <li className="nav-item mx-3" key={section}> {/* ✅ Increased spacing */}
+              <li className="nav-item mx-3" key={section}>
                 <a
                   className={`nav-link ${activeSection === section ? "active-link" : ""}`}
                   href={`#${section}`}
+                  onClick={() => setMenuOpen(false)} // ✅ Closes menu when clicking a link
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </a>

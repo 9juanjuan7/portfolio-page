@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="about" className="container-fluid d-flex flex-column flex-md-row align-items-center min-h-screen px-4 py-10 text-center text-md-start">
+    <section id="about" className="container-fluid d-flex flex-column flex-md-row align-items-center min-h-screen px-4 py-10 text-center text-md-start position-relative">
 
       <div className="row w-100 align-items-center">
         {/* Left Column - Profile Image */}
@@ -21,7 +21,7 @@ const About = () => {
           I have done extensive research on blockchain and Web3 solutions in AI, financial systems, real-world assets, and even music.
           Additionally, I actively explore and engage with various DeFi protocols, yield farming strategies, liquidity pools, and crypto investing,
           gaining hands-on experience in smart contract interactions, risk management, and on-chain analysis.
-          I have mastered multiple digital audio workstations, worked with artists from accross the world, and monetized my music through digital platforms.<br></br><br></br>
+          I have mastered multiple digital audio workstations, worked with artists from across the world, and monetized my music through digital platforms.<br></br><br></br>
           My vision is to empower people by integrating traditional systems with blockchain and driving innovation in Web3 solutions for real-world applications. 
 
           </p>
@@ -91,15 +91,7 @@ const About = () => {
               </div>
             </div>
           </div>
-
-
         </div>
-      </div>
-      {/* Scroll Down Arrow */}
-      <div className="arrow-container">
-        <a href="#projects" className="scroll-arrow">
-          <i className="bi bi-chevron-down"></i>
-        </a>
       </div>
     </section>
   );

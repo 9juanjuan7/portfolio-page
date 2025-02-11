@@ -31,7 +31,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="container-fluid d-flex flex-column justify-content-center align-items-center min-h-screen px-4 py-10">
+    <section id="experience" className="container-fluid d-flex flex-column justify-content-center align-items-center min-h-screen px-4 py-10 position-relative">
 
       <div className="text-center w-75">
         <h2 className="fw-bold mb-4">Experience</h2>
@@ -50,12 +50,6 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </div>
-      {/* Scroll Down Arrow */}
-      <div className="arrow-container">
-        <a href="#contact" className="scroll-arrow">
-          <i className="bi bi-chevron-down"></i>
-        </a>
       </div>
     </section>
   );

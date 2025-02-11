@@ -25,6 +25,12 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            {/* Scroll Down Arrow */}
+            <div className="arrow-container">
+                <a href="#footer" className="scroll-arrow">
+                <i className="bi bi-chevron-down"></i>
+                </a>
+            </div>
         </section>
     );
 };
