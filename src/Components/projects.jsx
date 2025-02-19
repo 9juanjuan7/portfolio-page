@@ -5,13 +5,22 @@ const Projects = () => {
       id: 1,
       title: "StarStake (DeFi Staking Platform)",
       description: "A decentralized Ethereum staking platform built on the Sepolia Testnet.",
-      img: "/starstake-aquarium.png", // Replace with actual project image
+      img: "/starstake-aquarium.png",
       link: "https://starstake-bay.vercel.app/",
       github: "https://github.com/9juanjuan7/starstake-decentralized-staking",
       stack: "Solidity, Hardhat, Ethers.js, React"
     },
     {
       id: 2,
+      title: "TattLab | Interactive Tattoo Visualizer",
+      description: "A 3D renderer that allows users to upload, position, and preview tattoo designs on a realistic arm model.",
+      img: "/tattlabpreview.png",
+      link: "https://tattlab.up.railway.app/",
+      github: "https://github.com/9juanjuan7/tattlab2",
+      stack: "Three.js, Bootstrap, Flask"
+    },
+    {
+      id: 3,
       title: "Portfolio Website",
       description: "A personal resume portfolio website built with React and Bootstrap.",
       img: "/LOGO1.png",
