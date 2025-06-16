@@ -15,7 +15,7 @@ const Projects = () => {
       title: "TattLab | Interactive Tattoo Visualizer",
       description: "A 3D renderer that allows users to upload, position, and preview tattoo designs on a realistic arm model.",
       img: "/tattlabpreview.png",
-      link: "https://tattlab.up.railway.app/",
+      link: "https://tattlab.koyeb.app/",
       github: "https://github.com/9juanjuan7/tattlab2",
       stack: "Three.js, Bootstrap, Flask"
     },
