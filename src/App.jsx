@@ -1,10 +1,10 @@
-import Home from "./components/Home";
-import Header from "./components/Header";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Experience from "./components/Experience";
+import Home from "./components/Home.jsx";
+import Header from "./components/Header.jsx";
+import About from "./components/About.jsx";
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
+import Experience from "./components/Experience.jsx";
 
 const App = () => {
   return (
